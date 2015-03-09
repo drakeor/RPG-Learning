@@ -38,6 +38,8 @@ public:
     std::string GetLocation() const { return location; }
     void SetLocation(std::string val) { location = val; }
 
+	void printStats();
+
 private:
 
     // Character information

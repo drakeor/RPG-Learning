@@ -39,7 +39,7 @@ int main()
 
         // Help command
         if(command == "help") {
-            std::cout << "Commands: quit, help, areas, whereami, examine, goto <area> " << std::endl;
+            std::cout << "Commands: quit, help, areas, whereami, examine, goto <area>, stats " << std::endl;
 
         // Areas command
         } else if(command == "areas") {
@@ -79,6 +79,8 @@ int main()
             std::cout << game.player->GetLocation() << std::endl;
         } else if(command == "examine") {
             std::cout << game.locations[game.player->GetLocation()].GetDescription();
+		} else if(command == "stats"){
+			game.player->printStats();
         } else {
             std::cout << "Invalid Command!" << std::endl;
         }
