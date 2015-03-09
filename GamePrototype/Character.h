@@ -39,13 +39,15 @@ public:
     void SetLocation(std::string val) { location = val; }
 
 	void printStats();
+	void levelUp();
+	void addExperience(int gainedExperience);
 
 private:
 
     // Character information
     std::string name;
     std::string location;
-    int experience;
+    int level, experience, levelExperience;
     int currentHp, maxHp;
     
     // Base Stat variables
