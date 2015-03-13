@@ -2,21 +2,35 @@
 #include <iomanip>
 #include "Character.h"
 
+
 Character::Character(std::string charName, std::string location) :
     name(charName), location(location)
 {
-   level = 1;
-   experience = 0;
-   levelExperience = 100;
-   currentHp = 10;
-   maxHp = 10;
-   baseStrength = baseCharisma = baseIntelligence = baseSpeed = baseVitality = baseWisdom = 1;
+   Setup();
+}
+
+Character::Character()
+{
+    name = "INSERT NAME HERE";
+    location = "Invalid";
+    Setup();
 }
 
 Character::~Character() 
 {
 
 }
+
+void Character::Setup()
+{
+    level = 1;
+    experience = 0;
+    levelExperience = 100;
+    currentHp = 10;
+    maxHp = 10;
+    baseStrength = baseCharisma = baseIntelligence = baseSpeed = baseVitality = baseWisdom = 1;
+}
+
 
 void Character::addExperience(int experienceGained)
 {

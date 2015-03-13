@@ -13,7 +13,7 @@ public:
 
     // Constructors and destructors
     Character(std::string charName, std::string location);
-    Character() { }
+    Character();
     ~Character();
 
     // Basic Field encapsulations
@@ -42,11 +42,17 @@ public:
 	void levelUp();
 	void addExperience(int gainedExperience);
 
-private:
-
-    // Character information
+protected:
+    
+    // Derived accessible classes
     std::string name;
     std::string location;
+
+private:
+    // Initialise default values
+    void Setup();
+
+    // Character information
     int level, experience, levelExperience;
     int currentHp, maxHp;
     

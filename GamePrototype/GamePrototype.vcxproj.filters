@@ -19,6 +19,9 @@
     <ClCompile Include="Game.cpp">
       <Filter>Project Files</Filter>
     </ClCompile>
+    <ClCompile Include="NPC.cpp">
+      <Filter>Project Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h">
@@ -28,6 +31,9 @@
       <Filter>Project Files</Filter>
     </ClInclude>
     <ClInclude Include="Game.h">
+      <Filter>Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC.h">
       <Filter>Project Files</Filter>
     </ClInclude>
   </ItemGroup>

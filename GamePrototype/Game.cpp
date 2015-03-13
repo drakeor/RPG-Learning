@@ -43,5 +43,13 @@ void Game::AddLocation( std::string id, std::string realName, std::string descri
     locations[parentName].AddLocationLink(id);
 }
 
+void Game::SetupNPCs()
+{
+    NPC newNPC;
+    newNPC.SetName("Noodle");
+    newNPC.SetLocation("otterville_bar");
+    npcs.push_back(newNPC);
+}
+
 
 

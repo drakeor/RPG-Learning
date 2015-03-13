@@ -59,7 +59,8 @@ int main()
             }
 
 
-            // TODO: Add error checking here
+            // TODO: Add error checking here.
+            // THis searches locations for a match then attempts to travel the player there!
             bool playerTraveled = false;
             auto areaList = game.locations[game.player->GetLocation()].GetLinkedLocations();
             for (auto it=areaList.begin(); it!=areaList.end(); ++it)

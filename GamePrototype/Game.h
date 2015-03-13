@@ -8,6 +8,7 @@
 
 #include "Character.h"
 #include "Locations.h"
+#include "NPC.h"
 
 /**
  * \fn      Game
@@ -33,6 +34,9 @@ public:
     // Our player!
     std::unique_ptr<Character> player;
 
+    // List of NPCs in our game!
+    std::vector<NPC> npcs;
+
 private:
 
     /**
@@ -41,6 +45,8 @@ private:
      */
     void SetupLocations();
     void AddLocation(std::string id, std::string realName, std::string description, std::string parentId = "");
+
+    void SetupNPCs();
 };
 
 #endif // Game_h__
